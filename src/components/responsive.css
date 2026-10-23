@@ -1,0 +1,748 @@
+/* Website Responsive style */
+@media only screen and (min-width: 240px) and (max-width: 480px){
+    .lte-header {
+        left: 0 !important;
+    }
+    .logo img {
+            max-width: 200px;
+    }
+    .navbar-collapse{   
+        background: #163051;
+    }
+    .hero-section::before{
+        left: 0;
+    }
+    .hero-content {
+        padding-top: 5em;
+    }
+    .top-wave {
+        position: relative;
+        bottom: 0px;
+    }
+    .bndtxt{
+        padding-left: 0px;
+        left: -15px;
+    }
+    .hero-section{
+        max-height: 100%;
+        text-align: center;
+        background-position: center;
+    }
+     .heroSwiper{
+        height: 900px;
+    
+    }
+    .hero-bottle {
+            transform: translate(0px, 0%) !important;
+            margin-bottom: 0;
+            filter: none;
+            max-height: 300px;
+            
+    }
+    .leaf-1 {
+        width: 110px;
+        top: 50%;
+        left: 10%;  
+    }
+    .leaf-2 {
+        width: 130px;
+        top: 20%;
+        left: 53%;
+    }
+    .leaf-3 {
+        width: 110px;
+        bottom: 0%;
+        right: 25%;
+    }
+    .hero-btns{
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .hero-title {
+        font-size: 35px;
+    }
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    .abut-cont {
+        margin-left: 50px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .main-heading {
+        font-size: 35px;
+    }
+    .step1-txt {
+        text-align: center;
+    }
+    .point-chklst {
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+    .left-leaf::after{
+        opacity: 0.3;
+    }
+    .left-leaf::before{
+        top: -70px;
+        opacity: 0.2;
+    }
+    .serv-content{
+        text-align: center;
+    }
+    .point-btn{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .pntbox{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .pnt-box-vid-section {
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }   
+
+    .features-wrapper {
+        padding-bottom: 30px;
+    }
+    .btl-trck-wrapper {
+        padding-bottom: 50px;
+        background-position: 100% 85%;
+        background-repeat: repeat-x;
+        background-size: 100%;
+    }
+    .counter-subtitle {
+        font-size: 22px;
+    }
+    .lte-header{
+        left: 0px;
+    }
+    .footer-wrapper{
+        text-align: center;
+    }
+    .copyright-inner {
+        text-align: center;
+    }
+    .cpyrt-right {
+        text-align: center !important;
+        padding-top: 5px;
+    }
+    .footabt {
+        padding-bottom: 10px;
+    }
+    .foot-title{
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    .circle-icon:after{
+        left: 45%;
+        top: -6px;
+    }
+    .addrs-head {
+        padding-top: 10px;
+    }
+    .process-subtitle {
+        font-size: 30px;
+    }
+    .about-wrapper{
+        text-align: center;
+        padding-top: 10em;
+    }
+    .rotating-circle{
+        left: 30px;
+    }
+    .points-outer{
+        padding-top: 90px;
+    }
+    .featr-content {
+        font-size: 30px;
+    }
+    .counter-box {
+        text-align: center;
+        padding-bottom: 55px;
+    }
+    .counter-content::before{
+        left: 40%;
+    }
+    .counter-wrapper{
+        padding-bottom: 50px;
+    }
+    .nature-wrapper{
+        height: 50vh;
+    }
+    .faddrs-list > div {
+        display: block !important;
+    }
+
+}
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .logo img {
+            max-width: 200px;
+    }
+    .navbar-collapse{   
+        background: #163051;
+    }
+    .hero-section::before{
+        left: 0;
+    }
+    .hero-content {
+        padding-top: 5em;
+    }
+    .top-wave {
+        position: relative;
+        bottom: 0px;
+    }
+    .bndtxt{
+        padding-left: 0px;
+        left: -15px;
+    }
+    .hero-section{
+        max-height: 100%;
+        text-align: center;
+        background-position: center;
+    }
+    .heroSwiper{
+        height: 900px;
+    
+    }
+    .hero-bottle {
+        transform: translate(0px, 0%) !important;
+        max-height: 300px;
+        filter: none;
+        margin-bottom: 0px;
+    }
+    .leaf-1 {
+        width: 110px;
+        top: 50%;
+        left: 10%;  
+    }
+    .leaf-2 {
+        width: 130px;
+        top: 20%;
+        left: 53%;
+    }
+    .leaf-3 {
+        width: 110px;
+        bottom: 0%;
+        right: 25%;
+    }
+    .hero-btns{
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .hero-title {
+        font-size: 35px;
+    }
+    .abut-cont {
+        margin-left: 50px;
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .main-heading {
+        font-size: 35px;
+    }
+    .step1-txt {
+        text-align: center;
+    }
+    .point-chklst {
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+    .left-leaf::after{
+        opacity: 0.3;
+    }
+    .left-leaf::before{
+        top: -150px;
+    }
+    .serv-content{
+        text-align: center;
+    }
+    .point-btn{
+        display: block;
+        margin-bottom: 50px;
+    }
+    .pntbox{
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .pnt-box-vid-section {
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    } 
+
+    .features-wrapper {
+        padding-bottom: 30px;
+    }
+    .btl-trck-wrapper {
+        padding-bottom: 50px;
+        background-position: 100% 85%;
+        background-repeat: repeat-x;
+        background-size: 100%;
+    }
+    .counter-subtitle {
+        font-size: 22px;
+    }
+    .lte-header{
+        left: 0px;
+    }
+    .footer-wrapper{
+        text-align: center;
+    }
+    .copyright-inner {
+        text-align: center;
+    }
+    .cpyrt-right {
+        text-align: center !important;
+        padding-top: 5px;
+    }
+    .footabt {
+        padding-bottom: 10px;
+    }
+    .foot-title{
+        padding-top: 30px;
+        margin-bottom: 10px;
+    }
+    .circle-icon:after{
+        left: 45%;
+        top: -6px;
+    }
+    .addrs-head {
+        padding-top: 10px;
+    }
+    .process-subtitle {
+        font-size: 30px;
+    }
+    .about-wrapper{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .rotating-circle{
+        left: 30px;
+    }
+    .points-outer{
+        padding-top: 90px;
+    }
+    .featr-content {
+        font-size: 30px;
+    }
+    .counter-box {
+        text-align: center;
+        padding-bottom: 55px;
+    }
+    .counter-content::before{
+        left: 40%;
+    }
+    .counter-wrapper{
+        padding-bottom: 50px;
+    }
+    .nature-wrapper{
+        height: 50vh;
+    }
+    .faddrs-list > div {
+        display: block !important;
+    }
+}
+@media (max-width: 767px){
+
+    .heroSwiper,
+    .hero-slide,
+    .hero-row{
+        min-height:auto;
+        height:auto;
+    }
+
+    .hero-slide{
+        padding-top:100px;
+        padding-bottom:0;
+    }
+
+}
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .hero-section{
+        background-position: center;
+        max-height: 100%;
+        padding-bottom: 90px;
+    }
+    .hero-content {
+        padding-top: 5em;
+        text-align: center;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+    .hero-title{
+        font-size: 35px;
+    }
+    .hero-bottle{
+        transform: translate(0px, 0%) !important;
+        max-height: 300px;
+        margin-bottom: 0px;
+    }
+    .leaf-2{
+        width: 130px;
+    }
+    .leaf-1{
+        width: 120px;
+        left: 20%;
+    }
+    .leaf-3{
+        width: 130px;
+        bottom: -10%;
+    }
+    .top-wave{
+        position: relative;
+        bottom: 0;
+    }
+
+    /* About style css */
+    .middle-wrapper{
+        padding-top: 10px;
+        padding-bottom: 90px;
+    }
+    .abut-cont {
+        margin-right: 0;
+    }
+    .rotating-circle{
+        left: 40px;
+    }
+    .bndtxt{
+        left: -5px;
+    }
+    .section-two {
+            padding-top: 50px;
+            text-align: center;
+    }
+    .main-heading {
+        font-size: 45px;
+    }
+    .left-leaf::before {
+        background-size: 90%;
+        background-repeat: no-repeat;
+        left: 30px;
+        top: -50px;
+    }
+    .serv-content{
+        text-align: center;
+    }
+
+    /* Point Checklist */
+    .step1-txt {
+        padding-top: 90px;
+        text-align: center;
+    }
+    .point-chklst {
+        text-align: center;
+    }
+    .point-btn{
+        display: block;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+    .pntbox{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .pnt-box-vid-section {
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    } 
+    .lte-header{
+        left: 15%;
+        top: 170px;
+    }
+    .process-circle-box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* Features Section Style */
+    .features-wrapper{
+        padding-bottom: 10px;
+    }
+    .featr-content{
+        padding-bottom: 50px;
+    }
+
+    .btl-trck-wrapper {
+        background-position: 100% 85%;
+        background-repeat: repeat-x;
+        background-size: 100%;
+    }
+
+    /* Footer Style */
+    .footer-wrapper{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .foot-title{
+        padding-top: 50px;
+    }
+    .foot-addrs-list li{
+        padding-bottom: 40px;
+    }
+    .circle-icon:after{
+        top: -6px;
+        left: 47%;
+    }
+    .addrs-head{
+        padding-top: 10px;
+    }
+    .copyright-wrapper{
+        text-align: center;
+    }
+
+    .cpyrt-right {
+        justify-items: center;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section{
+        background-position: center;
+        max-height: 100%;
+        padding-bottom: 90px;
+    }
+    .hero-content {
+        padding-top: 5em;
+        text-align: center;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+    .hero-title{
+        font-size: 35px;
+    }
+    .hero-bottle{
+        transform: translate(0px, 20%) !important;
+        max-height: 80vh;
+    }
+    .leaf-2{
+        width: 130px;
+    }
+    .leaf-1{
+        width: 120px;
+        left: 20%;
+    }
+    .leaf-3{
+        width: 130px;
+        bottom: -10%;
+    }
+    .top-wave{
+        position: relative;
+        bottom: 135px;
+    }
+
+    /* About style css */
+    .middle-wrapper{
+        padding-top: 10px;
+        padding-bottom: 90px;
+    }
+    .abut-cont {
+        margin-right: 0;
+    }
+    .rotating-circle{
+        left: 5px;
+    }
+    .bndtxt{
+        left: -40px;
+    }
+    .section-two {
+            padding-top: 50px;
+            text-align: center;
+    }
+    .main-heading {
+        font-size: 45px;
+    }
+    .left-leaf::before {
+        background-size: 90%;
+        background-repeat: no-repeat;
+        left: 30px;
+        top: -50px;
+    }
+    
+    .serv-content{
+        text-align: center;
+    }
+
+    /* Point Checklist */
+    .step1-txt {
+        padding-top: 90px;
+        text-align: center;
+    }
+    .point-chklst {
+        text-align: center;
+    }
+    .point-btn{
+        display: block;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+    .pntbox{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .pnt-box-vid-section {
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    } 
+
+    .lte-header{
+        left: 25%;
+        top: 170px;
+    }
+    .process-circle-box {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* Features Section Style */
+    .features-wrapper{
+        padding-bottom: 10px;
+    }
+    .featr-content{
+        padding-bottom: 50px;
+    }
+
+     .btl-trck-wrapper {
+        background-position: 100% 85%;
+        background-repeat: repeat-x;
+        background-size: 100%;
+    }
+
+    /* Footer Style */
+    .footer-wrapper{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .foot-title{
+        padding-top: 50px;
+    }
+    .foot-addrs-list li{
+        padding-bottom: 40px;
+    }
+    .circle-icon:after{
+        top: -6px;
+        left: 47%;
+    }
+    .addrs-head{
+        padding-top: 10px;
+    }
+    .copyright-wrapper{
+        text-align: center;
+    }
+
+    .cpyrt-right {
+        justify-items: center;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    /* Navbar Section Style */
+    div#mainNavbar .btn {
+        display: none;
+    }
+
+    /* Hero Section Style */
+    .hero-section{
+        background-position: center;
+        max-height: 100%;
+        padding-bottom: 90px;
+    }
+    .hero-content {
+        padding-top: 10em;
+        text-align: center;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+    .hero-title{
+        font-size: 55px;
+    }
+    .hero-bottle{
+        transform: translate(0px, 0%) !important;
+        max-height: 60vh;
+    }
+    .leaf-2{
+        width: 130px;
+    }
+    .leaf-1{
+        width: 120px;
+        left: 20%;
+    }
+    .leaf-3{
+        width: 130px;
+        bottom: -10%;
+    }
+    .top-wave{
+        position: relative;
+        bottom: 0;
+    }
+    /* About Section Style */
+    .middle-wrapper {
+        padding-top: 90px;
+    }
+    .main-heading {
+        font-size: 50px;
+    }
+    .abut-cont{
+        margin-right: 20px;
+        margin-left: 90px;
+    }
+
+    /* Point Section Style */
+    .left-leaf::before{
+        top: -250px;
+        left: 30px;
+    }
+    .left-leaf::after{
+        top: 125vh;
+    }
+
+    /* Feature Section Style */
+    .features-wrapper{
+        padding-bottom: 10px;
+    }
+    .btl-trck-wrapper{
+        padding-bottom: 70px;
+    }
+    .counter-title {
+        font-size: 45px;
+    }
+    .counter-subtitle {
+        font-size: 20px;
+    }
+
+    /* Process Section Style */
+    .process-circle-box:after{
+        width: 180px;
+        height: 180px;
+        bottom: 30px;
+        left: 85%;
+    }
+    .process-circle-box {
+        margin-bottom: 10px;
+    }
+
+    /* Footer Section Style */
+    .circle-icon:after{
+        top: -3px;
+        left: -6px;
+    }
+    .foot-addrs-list li {
+        padding-bottom: 35px;
+    }
+}

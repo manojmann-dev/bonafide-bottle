@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none
+}
+.hero-section{
+    background-image: url(./../../public/imgs/water-hero-slider3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 900px;
+}
+
+.hero-section::before {
+    background: rgba(0,0,0,0.21);
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.hero-subtitle {
+    color: #52aea1;
+    position: relative;
+}
+.hero-title {
+    color: #fff;
+    font-size: 75px;
+}
+.hero-text {
+    color: #fff;
+}
+
+.hero-btns {
+    margin-top: 50px;
+}
+.hero-bottle{
+    transform: translate(0px, 10%) !important;
+    z-index: 11;
+    position: relative;
+    max-height: 75vh;
+}
+.hero-bottle::after{
+    background-image: url(./../../public/imgs/bottle-shadow-bg1.png);
+    content: '';
+    height: 50px;
+    width: 150px;
+    position: absolute;
+}
+
+
+
+/*Hero Slider Bottle Leafs Effect*/
+/* Common Leaf Style */
+.hero-image{
+    position: relative;
+}
+.leaf{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.95;
+    filter:
+    drop-shadow(0 10px 25px rgba(20,184,176,0.15));
+}
+
+/* Leaf 1 */
+
+.leaf-1{
+
+    width: 170px;
+    top: 55%;
+    left: 15%;
+    animation:
+    leafFloat1 7s ease-in-out infinite;
+    z-index: 111;
+}
+
+/* Leaf 2 */
+
+.leaf-2{
+    width: 190px;
+    top: 20%;
+    left: 50%;
+    animation:
+    leafFloat2 8s ease-in-out infinite;
+    z-index: 111;
+}
+
+/* Leaf 3 */
+
+.leaf-3{
+    width: 150px;
+    bottom: 0%;
+    right: 20%;
+    animation:
+    leafFloat3 9s ease-in-out infinite;
+    z-index: 111;
+}
+
+/* =========================================
+   LEAF ANIMATION
+========================================= */
+
+@keyframes leafFloat1{
+
+    0%{
+        transform:
+        translateY(0px)
+        rotate(0deg);
+    }
+
+    50%{
+        transform:
+        translateY(-18px)
+        rotate(8deg);
+    }
+
+    100%{
+        transform:
+        translateY(0px)
+        rotate(0deg);
+    }
+
+}
+
+@keyframes leafFloat2{
+
+    0%{
+        transform:
+        translateY(0px)
+        rotate(0deg);
+    }
+
+    50%{
+        transform:
+        translateY(20px)
+        rotate(-10deg);
+    }
+
+    100%{
+        transform:
+        translateY(0px)
+        rotate(0deg);
+    }
+
+}
+
+@keyframes leafFloat3{
+
+    0%{
+        transform:
+        translateY(0px)
+        rotate(0deg);
+    }
+
+    50%{
+        transform:
+        translateY(-15px)
+        rotate(12deg);
+    }
+
+    100%{
+        transform:
+        translateY(0px)
+        rotate(0deg);
+    }
+
+}
+
+/* Hero Slider CSS */ 
+/* =========================================
+   WATER GLOW EFFECTS
+========================================= */
+
+.water-glow{
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    z-index: 1;
+
+    pointer-events: none;
+
+}
+
+/* Left Glow */
+
+.hero-glow-1{
+
+    top: -150px;
+
+    left: -120px;
+
+    background: rgba(20,184,176,0.18);
+
+    animation: glowMove1 8s ease-in-out infinite;
+
+}
+
+/* Right Glow */
+
+.hero-glow-2{
+
+    bottom: -150px;
+
+    right: -120px;
+
+    background: rgba(31,94,157,0.20);
+
+    animation: glowMove2 10s ease-in-out infinite;
+
+}
+
+/* Glow Animations */
+
+@keyframes glowMove1{
+
+    0%{
+        transform: translate(0px,0px);
+    }
+
+    50%{
+        transform: translate(40px,20px);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+
+}
+
+@keyframes glowMove2{
+
+    0%{
+        transform: translate(0px,0px);
+    }
+
+    50%{
+        transform: translate(-40px,-20px);
+    }
+
+    100%{
+        transform: translate(0px,0px);
+    }
+
+}
+
+/* =========================================
+   FLOATING BUBBLES
+========================================= */
+
+.bubble{
+
+    position: absolute;
+
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow:
+    inset 0 0 10px rgba(255,255,255,0.15),
+    0 0 20px rgba(255,255,255,0.08);
+
+    animation: bubbleFloat linear infinite;
+
+    z-index: 2;
+
+}
+
+/* Bubble 1 */
+
+.bubble-1{
+
+    width: 45px;
+
+    height: 45px;
+
+    left: 8%;
+
+    animation-duration: 12s;
+
+    animation-delay: 0s;
+
+}
+
+/* Bubble 2 */
+
+.bubble-2{
+
+    width: 22px;
+
+    height: 22px;
+
+    left: 40%;
+
+    animation-duration: 16s;
+
+    animation-delay: 2s;
+
+}
+
+/* Bubble 3 */
+
+.bubble-3{
+
+    width: 70px;
+
+    height: 70px;
+
+    left: 75%;
+
+    animation-duration: 20s;
+
+    animation-delay: 1s;
+
+}
+
+/* Bubble Animation */
+
+@keyframes bubbleFloat{
+
+    0%{
+
+        transform:
+        translateY(0)
+        scale(1);
+
+        opacity: 0;
+
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        scale(1.3);
+
+        opacity: 0;
+
+    }
+
+}
+
+/* Hero wave style */
+
+/* =========================================
+   TOP REVERSE WAVE
+========================================= */
+.topwave-wrapper{
+    position: relative;
+}
+.top-wave{
+
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+.top-wave svg{
+
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 140px;
+}
+
+.wave-fill{
+    fill: #ffffff;
+    opacity: 1;
+}
+
+/* Smooth Floating */
+
+.top-wave svg{
+
+    /* animation: topWaveMove 8s ease-in-out infinite; */
+
+}
+
+@keyframes topWaveMove{
+
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(-20px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+
+}

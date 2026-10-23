@@ -1,0 +1,257 @@
+/* =========================================
+                HERO SECTION
+========================================= */
+
+.blog-hero-section{
+    min-height: 70vh;
+    background: linear-gradient(
+        135deg,
+        rgba(5,25,45,0.92),
+        rgba(8,38,66,0.92)
+    ),
+    url("https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1600&auto=format&fit=crop");
+
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+}
+
+.blog-tagline{
+    color: #8ed8ff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.blog-heading{
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.blog-subheading{
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.75);
+}
+
+
+/* =========================================
+                BLOG SECTION
+========================================= */
+
+.blog-section{
+    background: #f7f9fc;
+}
+
+
+/* FILTER BUTTONS */
+
+.filter-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-btn{
+    border: 1px solid #dfe5ec;
+    background: #ffffff;
+    padding: 12px 26px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background: #071c2f;
+    color: #ffffff;
+    border-color: #071c2f;
+}
+
+
+/* =========================================
+                BLOG CARD
+========================================= */
+
+.blog-card{
+    background: #ffffff;
+    border-radius: 28px;
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.blog-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 25px 80px rgba(0,0,0,0.08);
+}
+
+
+/* IMAGE */
+
+.blog-image-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-image{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.blog-card:hover .blog-image{
+    transform: scale(1.08);
+}
+
+.blog-category{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.95);
+    color: #111111;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* CONTENT */
+
+.blog-content{
+    padding: 32px;
+}
+
+.blog-meta{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.blog-meta span{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #777777;
+}
+
+.blog-title{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #111111;
+}
+.blog-title a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.blog-content .blog-description{
+    font-size: 16px;
+    line-height: 1.9;
+    color: #666666;
+    margin-bottom: 28px;
+}
+
+
+/* BUTTON */
+
+.blog-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #071c2f;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.blog-btn:hover{
+    gap: 15px;
+    color: #0d3b66;
+}
+
+/* =========================================
+            PAGINATION
+========================================= */
+
+.pagination-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pagination-btn,
+.pagination-number{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+    color: #071c2f;
+    font-weight: 600;
+    transition: 0.4s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.pagination-number.active{
+    background: #071c2f;
+    color: #ffffff;
+}
+
+.pagination-btn:hover,
+.pagination-number:hover{
+    background: #0d3b66;
+    color: #ffffff;
+}
+
+.pagination-btn.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* =========================================
+                RESPONSIVE
+========================================= */
+
+@media(max-width: 991px){
+
+    .blog-heading{
+        font-size: 52px;
+    }
+
+    .blog-title{
+        font-size: 24px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .blog-heading{
+        font-size: 38px;
+    }
+
+    .blog-subheading{
+        font-size: 17px;
+    }
+
+    .blog-content{
+        padding: 24px;
+    }
+
+}

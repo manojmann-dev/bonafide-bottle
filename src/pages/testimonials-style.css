@@ -1,0 +1,293 @@
+/* =========================================
+   TESTIMONIAL SECTION
+========================================= */
+
+.testimonial-section{
+    background: #f8fafc;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.testimonial-tagline{
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2bb9a9;
+    position: relative;
+}
+
+.testimonial-heading{
+    color: #0b1736;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.testimonial-description{
+    max-width: 720px;
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   REVIEW CARD
+========================================= */
+
+.review-card{
+
+    background: #ffffff;
+
+    border: 1px solid #edf0f3;
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    height: 100%;
+
+    transition: all 0.35s ease;
+
+    box-shadow:
+    0 4px 20px rgba(0,0,0,0.03);
+
+}
+
+.review-card:hover{
+
+    transform: translateY(-6px);
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,0.08);
+
+}
+
+/* =========================================
+   TOP WRAPPER
+========================================= */
+
+.review-top-wrapper{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 18px;
+
+}
+
+/* =========================================
+   USER AREA
+========================================= */
+
+.review-user-image{
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #ffffff;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+
+}
+
+.review-name{
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 3px;
+
+    color: #111827;
+
+}
+
+.review-designation{
+
+    font-size: 16px;
+
+    color: #6b7280;
+
+    font-weight: 500;
+
+}
+
+/* =========================================
+   GOOGLE ICON
+========================================= */
+
+.google-review-icon{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.google-review-icon svg{
+    font-size: 40px;
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.review-rating-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.review-stars{
+    display: flex;
+    gap: 6px;
+}
+
+.star-icon{
+    font-size: 18px;
+    color: #d1d5db;
+}
+
+.star-icon.active{
+    color: #fbbc05;
+}
+
+.rating-number{
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* =========================================
+   REVIEW TEXT
+========================================= */
+
+.review-text{
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #374151;
+
+    margin-bottom: 0;
+
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.custom-pagination{
+
+    gap: 12px;
+
+}
+
+.page-link{
+
+    border-radius: 12px !important;
+
+    border: 1px solid #dbe3ea;
+
+    min-width: 50px;
+
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2bb9a9;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+}
+
+.page-link:hover{
+
+    background: #2bb9a9;
+
+    border-color: #2bb9a9;
+
+    color: #ffffff;
+
+}
+
+.page-item.active .page-link{
+
+    background: #2bb9a9;
+
+    border-color: #2bb9a9;
+
+    color: #ffffff;
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:991px){
+
+    .review-card{
+        padding: 24px;
+    }
+
+    .review-name{
+        font-size: 20px;
+    }
+
+    .review-text{
+        font-size: 16px;
+    }
+
+    .google-review-icon{
+        width: 46px;
+        height: 46px;
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .testimonial-heading{
+        font-size: 34px;
+    }
+
+    .review-user-image{
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-name{
+        font-size: 18px;
+    }
+
+    .review-designation{
+        font-size: 14px;
+    }
+
+    .review-text{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}

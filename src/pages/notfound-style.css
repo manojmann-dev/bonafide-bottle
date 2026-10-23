@@ -1,0 +1,194 @@
+/* =========================================
+            404 PAGE
+========================================= */
+
+.notfound-wrapper{
+
+    position: relative;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #081120,
+        #0b1736,
+        #102447
+    );
+
+    padding: 60px 20px;
+}
+
+/* CONTENT */
+
+.notfound-content{
+
+    position: relative;
+
+    z-index: 5;
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+/* BIG 404 */
+
+.notfound-code{
+
+    font-size: clamp(120px, 18vw, 260px);
+
+    font-weight: 900;
+
+    line-height: 1;
+
+    margin-bottom: 10px;
+
+    color: #ffffff;
+
+    letter-spacing: 10px;
+
+    text-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+}
+
+.notfound-code span{
+
+    color: #4aaa91;
+
+    position: relative;
+}
+
+/* TITLE */
+
+.notfound-title{
+
+    font-size: clamp(32px, 5vw, 58px);
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+/* TEXT */
+
+.notfound-text{
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    color: rgba(255,255,255,0.75);
+
+    max-width: 650px;
+
+    margin: auto auto 40px;
+}
+
+/* BUTTON */
+
+.notfound-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 16px 34px;
+
+    border-radius: 70px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #ffffff;
+
+    background:
+    linear-gradient(
+        135deg,
+        #4aaa91,
+        #2f8d77
+    );
+
+    transition: 0.4s ease;
+}
+
+.notfound-btn:hover{
+
+    transform: translateY(-5px);
+
+    color: #ffffff;
+
+    box-shadow:
+    0 15px 40px rgba(74,170,145,0.35);
+}
+
+/* GLOW CIRCLES */
+
+.blur-circle{
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.45;
+}
+
+.blur-one{
+
+    width: 350px;
+    height: 350px;
+
+    background: #4aaa91;
+
+    top: -100px;
+    left: -100px;
+}
+
+.blur-two{
+
+    width: 400px;
+    height: 400px;
+
+    background: #2962ff;
+
+    bottom: -150px;
+    right: -120px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .notfound-title{
+
+        font-size: 34px;
+    }
+
+    .notfound-text{
+
+        font-size: 16px;
+    }
+
+    .notfound-btn{
+
+        padding: 14px 26px;
+    }
+
+}

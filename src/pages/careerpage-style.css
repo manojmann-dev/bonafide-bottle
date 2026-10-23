@@ -1,0 +1,307 @@
+/* =========================================
+            HERO SECTION
+========================================= */
+
+.career-hero-section{
+    position: relative;
+    overflow: hidden;
+    padding: 160px 0 140px;
+    background:
+    linear-gradient(
+        135deg,
+        rgba(4, 20, 35, 0.92),
+        rgba(6, 38, 60, 0.92)
+    ),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.career-tagline{
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.12);
+    color: #8ed8ff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.career-heading{
+    font-size: 74px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.career-subheading{
+    max-width: 760px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+    color: rgba(255,255,255,0.75);
+}
+
+
+/* =========================================
+            CAREER SECTION
+========================================= */
+
+.career-section{
+    background: #f7f9fc;
+}
+
+
+/* =========================================
+            JOB CARD
+========================================= */
+
+.job-card{
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    transition: 0.45s ease;
+    border: 1px solid #edf0f3;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.04);
+}
+
+.job-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+}
+
+
+/* TOP BORDER EFFECT */
+
+.job-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #071c2f,
+        #0d3b66
+    );
+}
+
+
+/* STATUS */
+
+.job-status{
+    margin-bottom: 22px;
+}
+
+.available{
+    display: inline-block;
+    background: rgba(16,185,129,0.12);
+    color: #10b981;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.closed{
+    display: inline-block;
+    background: rgba(239,68,68,0.12);
+    color: #ef4444;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* TITLE */
+
+.job-title{
+    font-size: 34px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 25px;
+}
+
+
+/* META */
+
+.job-meta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.job-meta span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    background: #f3f6f9;
+    color: #555555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* DESCRIPTION */
+
+.job-description{
+    font-size: 17px;
+    line-height: 1.9;
+    color: #666666;
+    margin-bottom: 35px;
+}
+
+
+/* BUTTON */
+
+.job-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 16px 30px;
+    border-radius: 50px;
+    background: #071c2f;
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+
+.job-btn:hover{
+    background: #0d3b66;
+    color: #ffffff;
+    gap: 16px;
+}
+
+
+/* =========================================
+            PAGINATION
+========================================= */
+
+.pagination-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pagination-btn,
+.pagination-number{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+    color: #071c2f;
+    font-weight: 600;
+    transition: 0.4s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.pagination-number.active{
+    background: #071c2f;
+    color: #ffffff;
+}
+
+.pagination-btn:hover,
+.pagination-number:hover{
+    background: #0d3b66;
+    color: #ffffff;
+}
+
+.pagination-btn.disabled{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+/* =========================================
+            EMPTY STATE
+========================================= */
+
+.no-job-found{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.no-job-found h3{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.no-job-found p{
+    color: #666666;
+    font-size: 18px;
+}
+
+
+/* =========================================
+            RESPONSIVE
+========================================= */
+
+@media(max-width: 1200px){
+
+    .career-heading{
+        font-size: 60px;
+    }
+
+}
+
+@media(max-width: 991px){
+
+    .career-hero-section{
+        padding: 140px 0 120px;
+    }
+
+    .career-heading{
+        font-size: 52px;
+    }
+
+    .job-title{
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .career-heading{
+        font-size: 38px;
+    }
+
+    .career-subheading{
+        font-size: 17px;
+    }
+
+    .job-card{
+        padding: 30px;
+    }
+
+    .job-title{
+        font-size: 24px;
+    }
+
+    .job-description{
+        font-size: 16px;
+    }
+
+    .pagination-btn,
+    .pagination-number{
+        width: 45px;
+        height: 45px;
+    }
+
+}

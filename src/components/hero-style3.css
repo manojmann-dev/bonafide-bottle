@@ -1,0 +1,378 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+.hero-row{
+    min-height:100svh;
+}
+
+.hero-section{
+    position:relative;
+    overflow:hidden;
+}
+
+/* SWIPER */
+
+.heroSwiper{
+    width:100%;
+    height:100svh;
+}
+
+.hero-slide{
+    position:relative;
+    min-height:100svh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+
+/* OVERLAY */
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.25);
+    z-index:1;
+}
+
+/* CONTAINER */
+
+.container{
+    position:relative;
+    z-index:10;
+}
+
+/* TEXT */
+
+.hero-content{
+    position:relative;
+    z-index:12;
+}
+
+.hero-subtitle{
+    color:#52aea1;
+    font-size:22px;
+    display:block;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.hero-title{
+    color:#fff;
+    font-size:76px;
+    font-weight:400;
+    line-height:1.08;
+    max-width:700px;
+}
+
+/* BUTTON */
+
+.hero-btns{
+    margin-top:50px;
+}
+
+.primary-btn{
+    background:#2bb7b3 !important;
+    border:none !important;
+    padding:18px 40px !important;
+    border-radius:60px !important;
+    font-size:22px !important;
+}
+
+/* IMAGE */
+
+.hero-image{
+    position:relative;
+    height:100%;
+    /* display:flex;
+    align-items:flex-end;
+    justify-content:center; */
+    text-align: center;
+
+}
+
+/* BOTTLE */
+
+.hero-bottle{
+
+    position: relative;
+
+    z-index: 999;
+
+    max-height: 75svh;
+
+    object-fit: contain;
+
+    /* THIS MAKES BOTTLE SIT ON WAVE */
+
+    margin-bottom: -135px;
+
+    /* filter:
+    drop-shadow(0 35px 25px rgba(0,0,0,0.35)); */
+
+}
+
+/* LEAF */
+
+.leaf{
+    position:absolute;
+    z-index:100;
+}
+
+/* LEAF POSITIONS */
+
+.leaf-1{
+    width:180px;
+    left:7%;
+    bottom:18%;
+    animation:leafFloat1 7s ease-in-out infinite;
+}
+
+.leaf-2{
+    width:220px;
+    right:6%;
+    top:24%;
+    animation:leafFloat2 8s ease-in-out infinite;
+}
+
+.leaf-3{
+    width:160px;
+    right:2%;
+    bottom:8%;
+    animation:leafFloat3 9s ease-in-out infinite;
+}
+
+/* EXACT SAME LEAF ANIMATION */
+
+@keyframes leafFloat1{
+
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-18px) rotate(8deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+}
+
+@keyframes leafFloat2{
+
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(20px) rotate(-10deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+}
+
+@keyframes leafFloat3{
+
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-15px) rotate(12deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+}
+
+/* WATER GLOW */
+
+.water-glow{
+    position:absolute;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:2;
+}
+
+.hero-glow-1{
+    top:-150px;
+    left:-120px;
+    background:rgba(20,184,176,0.18);
+}
+
+.hero-glow-2{
+    bottom:-150px;
+    right:-120px;
+    background:rgba(31,94,157,0.20);
+}
+
+/* BUBBLE */
+
+.bubble{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    animation:bubbleFloat linear infinite;
+    z-index:2;
+}
+
+.bubble-1{
+    width:45px;
+    height:45px;
+    left:8%;
+    bottom:-100px;
+    animation-duration:12s;
+}
+
+.bubble-2{
+    width:22px;
+    height:22px;
+    left:40%;
+    bottom:-100px;
+    animation-duration:16s;
+}
+
+.bubble-3{
+    width:70px;
+    height:70px;
+    left:75%;
+    bottom:-100px;
+    animation-duration:20s;
+}
+
+@keyframes bubbleFloat{
+
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+
+}
+
+/* WAVE */
+
+.topwave-wrapper{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    left:0;
+    z-index:5;
+    pointer-events:none;
+}
+
+.top-wave{
+    width:100%;
+    line-height:0;
+    transform:rotate(180deg);
+}
+
+.top-wave svg{
+    width:100%;
+    height:140px;
+    display:block;
+}
+
+.wave-fill{
+    fill:#fff;
+}
+
+/* PAGINATION */
+
+.heroSwiper .swiper-pagination{
+    bottom:40px !important;
+}
+
+.heroSwiper .swiper-pagination-bullet{
+    width:12px;
+    height:12px;
+    background:#fff;
+    opacity:0.5;
+}
+
+.heroSwiper .swiper-pagination-bullet-active{
+    background:#2bb7b3;
+    opacity:1;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+    .hero-slide{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .hero-title{
+        font-size:48px;
+    }
+
+    .hero-image{
+        margin-top:50px;
+    }
+
+    .hero-bottle{
+        max-height:480px;
+        margin-bottom:-90px;
+    }
+
+    .leaf-1{
+        width:120px;
+    }
+
+    .leaf-2{
+        width:150px;
+    }
+
+    .leaf-3{
+        width:120px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-title{
+        font-size:36px;
+    }
+
+    .hero-subtitle{
+        font-size:16px;
+    }
+
+    .primary-btn{
+        font-size:16px !important;
+        padding:14px 28px !important;
+    }
+
+    .hero-bottle{
+        max-height:340px;
+        margin-bottom:-70px;
+    }
+
+    .top-wave svg{
+        height:90px;
+    }
+
+}

@@ -1,0 +1,103 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+overflow-x:hidden;
+font-family:Arial,sans-serif;
+}
+
+
+/* HERO SECTION */
+.menubar,.specs{
+    background:#dff7f4;
+}
+.myhero{
+    height:990px;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    background:linear-gradient(180deg,#0fb7b2,#e5f7f6);
+    /* position: relative; */
+    /* background-image: url(./imgs/water-effects.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    padding-top: 150px;
+    
+}
+
+.myhero h1{
+    font-size:72px;
+    margin-bottom:40px;
+    color:#ffffff;
+    font-weight:700;
+    letter-spacing:2px;
+}
+.myhero h2{
+    font-size:42px;
+    color:#eaffff;
+    margin-bottom:25px;
+}
+
+.bottle{
+    /* width:220px;
+    display:block;
+    will-change:transform;
+    text-align: center;
+    margin: 0 auto; */
+
+    position:fixed;
+    top:18%;
+    right:50%;
+    height:600px;
+    z-index:9999;
+    will-change:transform;
+}
+
+
+
+/* NEXT SECTION */
+
+.specs{
+/* height:100vh;
+display:flex; */
+/* justify-content:center;
+align-items:center; */
+}
+
+.specs h2{
+font-size:60px;
+color:#111;
+}
+/* water-effects */
+.water-effects{
+    background: url(./imgs/water-effects.png);
+    min-height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: -200px;
+}
+.heroSlider-txt{
+    text-align: center;
+}
+
+/* Animation Intro1 Section */
+.animate1 {
+    background-color: #dff5f4;
+    /* background-image: url('./imgs/ice-bg-img.png'); */
+    padding-top: 180px;
+    padding-bottom: 90px;
+    background-size:cover ;
+}
+.animate2 {
+    background-color: #feffff;
+    padding-top: 180px;
+    padding-bottom: 90px;
+    background-size:cover ;
+}

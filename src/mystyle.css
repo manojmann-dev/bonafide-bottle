@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/* =========================
+   BONAFIDE THEME COLORS
+========================= */
+
+:root{
+
+    /* Primary Navy */
+    --primary-dark: #14345C;
+
+    /* Ocean Blue */
+    --primary-blue: #1F5E9D;
+
+    /* Aqua Teal */
+    --primary-teal: #14B8B0;
+
+    /* Light Water Cyan */
+    --primary-cyan: #7DE3E1;
+
+    /* Soft White */
+    --white: #ffffff;
+
+    /* Glass Effect */
+    --glass-bg: rgba(255,255,255,0.08);
+
+    /* Shadow */
+    --shadow-blue: rgba(20, 184, 176, 0.25);
+
+}
+.theme-color{
+    color: #45a892;
+}
+.text-primary{
+    color: #45a892 !important;
+}
+
+.accordion-button:not(.collapsed){
+    color: #ffffff;
+    background: linear-gradient(135deg, #4aaa91, #11929b);
+}
+ .theme-gredient-color{
+    background: linear-gradient(135deg, #14B8B0, #1F5E9D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.btn-primary{
+    background: linear-gradient(135deg, #4aaa91, #11929b);
+    color: #fff;
+    border-color: #4aaa91;
+}
+.btn-primary:hover{
+    background: linear-gradient(135deg, #11929b, #4aaa91);
+    border-color: #4aaa91;
+}
+.btn{
+    padding: 14px 30px;
+    border-radius: 50px;
+}
+

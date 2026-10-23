@@ -1,0 +1,206 @@
+
+/* =========================
+   Navbar
+========================= */
+
+.custom-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 18px 0;
+    transition: all 0.4s ease;
+    background: rgba(255,255,255,0);
+    /* backdrop-filter: blur(12px); */
+}
+
+/* Logo */
+
+.logo img{
+    max-width: 250px;
+}
+
+/* Nav Menu */
+
+.navbar-nav{
+    gap: 28px;
+}
+
+.nav-link{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+/* Hover Line */
+
+.nav-link::after{
+    /* content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    /* background: #fdffff; */
+    transition: 0.4s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    background-color: transparent;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#42ddc0 !important;   
+}
+
+/* CTA Button */
+
+.nav-btn{
+    padding: 14px 30px;
+    border-radius: 50px;
+    background: linear-gradient(135deg,#00BFFF,#007BFF);
+    color: #fff !important;
+    font-weight: 600;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.nav-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,191,255,0.35);
+}
+
+/* Dropdown */
+
+.custom-dropdown{
+    border: none;
+    border-radius: 20px;
+    padding: 15px 10px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.dropdown-item{
+    border-radius: 10px;
+    padding: 12px 18px;
+    transition: 0.3s;
+}
+
+.dropdown-item:hover{
+    background: #00BFFF;
+    color: #fff;
+}
+
+/* Mobile Toggle */
+
+.custom-toggler{
+    border: none;
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon{
+    filter: brightness(0) invert(1);
+}
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media(max-width:991px){
+
+    .custom-navbar{
+        padding: 15px 0;
+    }
+
+    .navbar-collapse{
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 20px;
+        background: #0d243d;
+        backdrop-filter: blur(15px);
+    }
+
+    .navbar-nav{
+        gap: 15px;
+    }
+
+    .nav-link{
+        font-size: 18px;
+    }
+
+    .nav-btn{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* =========================================
+   SCROLL CLASS
+========================================= */
+
+.navbar-scrolled{
+
+    background: rgba(11,35,65,0.92);
+
+    backdrop-filter: blur(14px);
+
+    padding: 14px 0;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,0.12);
+
+}
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media(max-width:991px){
+
+    .custom-navbar{
+        padding: 15px 0;
+    }
+
+    .navbar-collapse{
+
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 20px;
+
+        background: #0d243d;
+
+        backdrop-filter: blur(15px);
+
+        overflow: hidden;
+
+        transition: all 0.35s ease-in-out;
+    }
+
+    .navbar-collapse.collapsing{
+
+        transition: height 0.35s ease;
+    }
+
+    .navbar-nav{
+        gap: 15px;
+    }
+
+    .nav-link{
+        font-size: 18px;
+    }
+
+    .btn.btn-primary{
+
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+}

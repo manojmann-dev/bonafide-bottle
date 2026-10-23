@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.abt-banner-wrapper {
+    background-color: #163051;
+    min-height: 550px;
+    padding-top: 90px;
+    background-image: url(/public/imgs/about-banner-bg.png);
+    position: relative;
+    overflow: hidden;
+}
+.abt-banner-wrapper::before {
+    content: '';
+    background: #444444a1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.abt-banner-head {
+    color: #ffffff;
+    margin: 10px 0 10px;
+}
+.header-banner{
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+/*About Middle Main */
+
+.abt-middle-wrapper {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+.abt-contbx h2 {
+    line-height: 1.3em;
+}
+.abt-bfide-right p {
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*What We Do Style */
+.whtd-icon {
+    width: 70px;
+    margin-bottom: 15px;
+}
+.whtwd-box{
+    transition: all ease-out 0.5s;
+}
+.whtwd-box:hover{
+    background-color: #45a892;
+    color: #ffffff;
+}
+.whtwd-box:hover .whtd-tagline {
+    color: #000000 !important;
+}
+
+/* Story Card Style */
+.story-card {
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0px 4px 5px 0px #ededed;
+    border-radius: 100%;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    transition: all ease-out 0.5s;
+}
+.story-card:hover {
+    background: #1e3450;
+    color: #fff;
+}
+.story-card-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Why Choose us Style*/
+.abt-whychs-wrapper {
+    background: #1e3450;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.card-whychs {
+    background: #fff;
+}
+.whychs-heading h2, .whychs-heading p {
+    color: #fff;
+}
+
+/* Director Message Style */
+.dirmsg-imgbox img {
+    transition: all ease-out 0.5s;
+    transform: scale(0.9);
+}
+
+.dirmsg-imgbox:hover img {
+    transform: scale(1.0);
+}
+
+
+@media only screen and (max-width: 480px){
+    .about-middle-section {
+        text-align: center;
+    }
+    .abt-banner-wrapper{
+        background-position: -230px 0;
+    }
+    .story-card{
+        height: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hero-subtitle {
+        background: #fff;
+        padding: 8px 20px;
+        border-radius: 35px;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .abt-banner-wrapper{
+        background-position: 10% 0;
+    }
+    .story-card{
+        height: 400px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .hero-subtitle {
+        background: #fff;
+        padding: 8px 20px;
+        border-radius: 35px;
+    }
+}

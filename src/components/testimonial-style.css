@@ -1,0 +1,338 @@
+/* src/components/testimonials.css */
+
+/* =========================================
+   TESTIMONIAL SECTION
+========================================= */
+
+.testimonials-section{
+
+    position: relative;
+
+    padding: 140px 0;
+
+    background:
+    linear-gradient(
+        180deg,
+        #0B2341,
+        #102D50
+    );
+
+    overflow: hidden;
+
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.testi-heading{
+    margin-bottom: 70px;
+}
+
+.testi-subtitle{
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: #45a892;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+
+}
+
+.testi-title{
+
+    font-size: 58px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    color: #fff;
+
+}
+
+.testi-title span{
+
+    background:
+    linear-gradient(
+        135deg,
+        #45a892,
+        #1fdfd6
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* =========================================
+   SWIPER
+========================================= */
+
+.testimonial-swiper{
+    padding-bottom: 20px;
+}
+
+/* =========================================
+   TESTIMONIAL CARD
+========================================= */
+
+.testimonial-card{
+
+    position: relative;
+
+    padding: 45px;
+
+    border-radius: 35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.03)
+    );
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(16px);
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+
+    min-height: 340px;
+
+}
+
+.testimonial-card:hover{
+
+    transform: translateY(-10px);
+
+    border-color: rgba(125,227,225,0.25);
+
+}
+
+/* Quote Icon */
+
+.quote-icon{
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    font-size: 26px;
+
+    color: #7DE3E1;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(20,184,176,0.18),
+        rgba(31,94,157,0.20)
+    );
+
+}
+
+/* Text */
+
+.testimonial-text{
+
+    color: rgba(255,255,255,0.78);
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin-bottom: 40px;
+
+}
+
+/* =========================================
+   USER
+========================================= */
+
+.testimonial-user{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.testimonial-user img{
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid rgba(125,227,225,0.3);
+
+}
+
+.testimonial-user h4{
+
+    color: #fff;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+
+}
+
+.testimonial-user span{
+
+    color: rgba(255,255,255,0.65);
+
+    font-size: 15px;
+
+}
+
+/* =========================================
+   GLOW EFFECTS
+========================================= */
+
+.testimonial-glow{
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    z-index: 1;
+
+}
+
+.testimonial-glow-1{
+
+    top: -120px;
+
+    left: -120px;
+
+    background: rgba(20,184,176,0.12);
+
+}
+
+.testimonial-glow-2{
+
+    bottom: -120px;
+
+    right: -120px;
+
+    background: rgba(31,94,157,0.16);
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .testi-title{
+        font-size: 42px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .testi-title{
+        font-size: 34px;
+    }
+
+    .testimonial-card{
+        padding: 35px;
+    }
+
+    .testimonial-text{
+        font-size: 16px;
+    }
+
+}
+
+/* =========================================
+   SWIPER PAGINATION DOTS
+========================================= */
+
+.swiper-pagination{
+
+    position: relative;
+
+    margin-top: 60px;
+
+}
+
+/* Normal Dot */
+
+.swiper-pagination-bullet{
+
+    width: 12px;
+
+    height: 12px;
+
+    background: rgba(255,255,255,0.25);
+
+    opacity: 1;
+
+    transition: all 0.4s ease;
+
+    margin: 0 8px !important;
+
+}
+
+/* Active Dot */
+
+.swiper-pagination-bullet-active{
+
+    width: 34px;
+
+    border-radius: 30px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #7DE3E1,
+        #14B8B0
+    );
+
+    box-shadow:
+    0 0 15px rgba(125,227,225,0.4);
+
+}

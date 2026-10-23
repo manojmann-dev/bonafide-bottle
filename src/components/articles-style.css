@@ -1,0 +1,332 @@
+/* =========================================
+   LIGHT ARTICLES SECTION
+========================================= */
+
+.articles-section{
+
+    position: relative;
+
+    padding: 140px 0;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff,
+        #ffffff
+    );
+
+    overflow: hidden;
+
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-heading{
+    margin-bottom: 70px;
+}
+
+.section-subtitle{
+
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    background: rgba(20,184,176,0.08);
+
+    border: 1px solid rgba(20,184,176,0.10);
+
+    color: #14B8B0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+
+}
+
+.section-title{
+
+    font-size: 58px;
+
+    font-weight: 600;
+
+    color: #0B2341;
+
+    line-height: 1.2;
+
+}
+
+.section-title span{
+
+    background:
+    linear-gradient(
+        135deg,
+        #14B8B0,
+        #1F5E9D
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* =========================================
+   ARTICLE CARD
+========================================= */
+
+.article-card{
+
+    position: relative;
+
+    border-radius: 32px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border:
+    1px solid rgba(20,184,176,0.08);
+
+    transition: all 0.4s ease;
+
+    height: 100%;
+
+    box-shadow:
+    0 15px 40px rgba(15,45,85,0.06);
+
+}
+
+.article-card:hover{
+
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 25px 60px rgba(15,45,85,0.12);
+
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.article-image{
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.article-image img{
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+
+}
+
+.article-card:hover .article-image img{
+
+    transform: scale(1.08);
+
+}
+
+/* Category */
+
+.article-category{
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    padding: 10px 18px;
+
+    border-radius: 50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #14B8B0,
+        #1F5E9D
+    );
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.article-content{
+
+    padding: 35px;
+
+}
+
+.article-date{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+}
+
+.article-title{
+
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 30px;
+
+}
+
+.article-title a{
+
+    color: #0B2341;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+}
+
+.article-title a:hover{
+
+    color: #14B8B0;
+
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.article-btn{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #14B8B0;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+.article-btn i{
+
+    transition: transform 0.3s ease;
+
+}
+
+.article-btn:hover{
+
+    color: #0B2341;
+
+}
+
+.article-btn:hover i{
+
+    transform: translateX(6px);
+
+}
+
+/* =========================================
+   LIGHT GLOW EFFECTS
+========================================= */
+
+.article-glow{
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    z-index: 1;
+
+}
+
+.article-glow-1{
+
+    top: -120px;
+
+    left: -120px;
+
+    background: rgba(20,184,176,0.08);
+
+}
+
+.article-glow-2{
+
+    bottom: -120px;
+
+    right: -120px;
+
+    background: rgba(31,94,157,0.08);
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:991px){
+
+    .section-title{
+        font-size: 44px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .section-title{
+        font-size: 34px;
+    }
+
+    .article-title{
+        font-size: 24px;
+    }
+
+    .article-content{
+        padding: 28px;
+    }
+
+}

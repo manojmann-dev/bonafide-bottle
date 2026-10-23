@@ -1,0 +1,96 @@
+/* =========================================
+                CONTACT SECTION
+========================================= */
+
+.contact-tagline{
+    font-size: 14px;
+    font-weight: 600;
+    color: #45a892;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-heading{
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111111;
+}
+
+.contact-description{
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666666;
+}
+
+
+/* CONTACT INFO */
+
+.contact-info-wrapper{
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.contact-info-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #111111;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+
+/* CONTACT FORM */
+
+.contact-form-wrapper{
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.04);
+}
+
+.custom-input{
+    height: 58px;
+    border-radius: 14px;
+    border: 1px solid #dddddd;
+    padding: 15px 20px;
+    box-shadow: none !important;
+}
+
+textarea.custom-input{
+    height: auto;
+    resize: none;
+}
+
+.custom-input:focus{
+    border-color: #111111;
+}
+/* =========================================
+                MAP SECTION
+========================================= */
+
+.map-wrapper{
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+.map-wrapper iframe{
+    display: block;
+}
