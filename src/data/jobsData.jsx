@@ -13,7 +13,7 @@ const jobsData = [
 
         experience: "2+ Years",
 
-        salary: "$45k - $60k",
+        salary: "$4k - $6k",
 
         available: true,
 
@@ -53,7 +53,7 @@ const jobsData = [
 
         experience: "1+ Years",
 
-        salary: "$40k - $55k",
+        salary: "$4k - $5k",
 
         available: true,
 
@@ -93,7 +93,7 @@ const jobsData = [
 
         experience: "4+ Years",
 
-        salary: "$70k - $90k",
+        salary: "$7k - $9k",
 
         available: false,
 
