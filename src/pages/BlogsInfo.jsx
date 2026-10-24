@@ -12,6 +12,9 @@ import {
     FaTwitter,
     FaInstagram,
     FaArrowRight,
+    FaWhatsapp,
+    FaLinkedinIn,
+    FaLink,
 } from "react-icons/fa";
 
 import { Link, useParams } from "react-router-dom";
@@ -34,6 +37,59 @@ const BlogDetailsPage = () => {
         (item) => item.slug !== slug
     );
 
+    // Share Article Social Media Plateform
+
+    const [copied, setCopied] = useState(false);
+
+    const articleUrl =
+        typeof window !== "undefined"
+            ? `${window.location.origin}/blog/${blog?.slug || slug}`
+            : "";
+
+    const articleTitle = blog?.title || "Bonafide Article";
+
+    const encodedUrl = encodeURIComponent(articleUrl);
+    const encodedTitle = encodeURIComponent(articleTitle);
+
+    const shareLinks = {
+        facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+
+        twitter: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+
+        whatsapp: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+
+        linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    };
+
+    const copyArticleLink = async () => {
+        try {
+            await navigator.clipboard.writeText(articleUrl);
+            setCopied(true);
+
+            window.setTimeout(() => setCopied(false), 2500);
+        } catch (error) {
+            window.prompt("Copy article link:", articleUrl);
+        }
+    };
+
+    const shareArticle = async () => {
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: articleTitle,
+                    url: articleUrl,
+                });
+            } catch (error) {
+                if (error.name !== "AbortError") {
+                    console.error("Share failed:", error);
+                }
+            }
+        } else {
+            await copyArticleLink();
+        }
+    };
+
+    // End Share Article Social Media Platform
 
     if (!blog) {
 
@@ -311,52 +367,105 @@ const BlogDetailsPage = () => {
                                     </h4>
 
                                 </div>
+                                
+                {/* SOCIAL SHARE */}
+                <div className="social-share-wrapper">
+                    <h5
+                        data-aos="zoom-in"
+                        data-aos-delay="1200"
+                    >
+                        Share Article
+                    </h5>
 
+                    <div className="social-icons">
+                        {/* FACEBOOK */}
+                        <a
+                            href={shareLinks.facebook}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Share article on Facebook"
+                            title="Share on Facebook"
+                            data-aos="zoom-in"
+                            data-aos-delay="800"
+                        >
+                            <FaFacebookF />
+                        </a>
 
+                        {/* X / TWITTER */}
+                        <a
+                            href={shareLinks.twitter}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Share article on X"
+                            title="Share on X"
+                            data-aos="zoom-in"
+                            data-aos-delay="900"
+                        >
+                            <FaTwitter />
+                        </a>
 
-                                {/* SOCIAL SHARE */}
-                                <div className="social-share-wrapper">
+                        {/* WHATSAPP */}
+                        <a
+                            href={shareLinks.whatsapp}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Share article on WhatsApp"
+                            title="Share on WhatsApp"
+                            data-aos="zoom-in"
+                            data-aos-delay="1000"
+                        >
+                            <FaWhatsapp />
+                        </a>
 
-                                    <h5 
-                                        data-aos="zoom-in"
-                                        data-aos-delay="1200"
-                                    >
+                        {/* LINKEDIN */}
+                        <a
+                            href={shareLinks.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Share article on LinkedIn"
+                            title="Share on LinkedIn"
+                            data-aos="zoom-in"
+                            data-aos-delay="1100"
+                        >
+                            <FaLinkedinIn />
+                        </a>
 
-                                        Share Article
+                        {/* INSTAGRAM / NATIVE SHARE */}
+                        <a
+                            type="button"
+                            onClick={shareArticle}
+                            aria-label="Share article using your device"
+                            title="More sharing options"
+                            data-aos="zoom-in"
+                            data-aos-delay="1200"
+                        >
+                            <FaInstagram />
+                        </a>
 
-                                    </h5>
+                        {/* COPY LINK */}
+                        <a
+                            type="button"
+                            onClick={copyArticleLink}
+                            aria-label="Copy article link"
+                            title="Copy article link"
+                            data-aos="zoom-in"
+                            data-aos-delay="1300"
+                        >
+                            <FaLink />
+                        </a>
+                    </div>
 
-                                    <div className="social-icons">
+                    {copied && (
+                        <p
+                            className="share-copy-message"
+                            role="status"
+                            aria-live="polite"
+                        >
+                            Article link copied successfully!
+                        </p>
+                    )}
+                </div>
 
-                                        <a href="#" 
-                                            data-aos="zoom-in"
-                                            data-aos-delay="800">
-
-                                            <FaFacebookF />
-
-                                        </a>
-
-                                        <a href="#"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="900"
-                                        >
-
-                                            <FaTwitter />
-
-                                        </a>
-
-                                        <a href="#"
-                                            data-aos="zoom-in"
-                                            data-aos-delay="1000"
-                                        >
-
-                                            <FaInstagram />
-
-                                        </a>
-
-                                    </div>
-
-                                </div>
 
 
 
