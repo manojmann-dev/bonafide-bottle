@@ -108,7 +108,7 @@ export default function Navbar(){
                                             </li>
                                             
                                         </ul>
-                                        <a href="#" className="btn btn-primary"
+                                        <a href="/enquiry" className="btn btn-primary"
                                             data-aos="fade-up" 
                                             data-aos-delay="500"
                                         > 
@@ -175,7 +175,7 @@ export default function Navbar(){
                                     </div>
                                     
 
-                                    <a href="#" className="btn btn-primary point-btn"
+                                    <a href="/enquiry" className="btn btn-primary point-btn"
                                         data-aos="fade-up" 
                                         data-aos-delay="500"
                                     > 
@@ -486,7 +486,7 @@ export default function Navbar(){
                                 >
                                     <h4 className="main-heading nature-title"> Nature inside our every bottle of water</h4>
 
-                                    <a href="#" title="Read More" className="btn btn-primary"> 
+                                    <a href="/about" title="Read More" className="btn btn-primary"> 
                                         Read More <i className="fa-solid fa-arrow-right"></i>
                                     </a>
                                 </div>
