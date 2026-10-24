@@ -19,27 +19,17 @@ import Articles from "./Articles";
 import SpecialService from "./Services";
 import HomeBottles from "./HomeBottles";
 
-
-
-
 export default function Navbar(){
     
         useEffect(() => {
     
             AOS.init({
-    
                 duration: 1200,
-    
                 once: false,
-    
                 mirror: true,
-    
                 offset: 80,
-    
                 easing: "ease-out-cubic",
-    
             });
-    
         }, []);
 
     return(
