@@ -17,6 +17,7 @@ const Articles = () => {
             category: "Hydration",
             title: "Why Daily Hydration Is Essential For Healthy Living",
             date: "08 Aug 2025",
+            url: "/blog/why-daily-hydration-is-essential-for-healthy-living"
         },
 
         {
@@ -25,6 +26,7 @@ const Articles = () => {
             category: "Mineral Water",
             title: "Benefits Of Drinking Natural Mineral Water Everyday",
             date: "11 Aug 2025",
+            url: "/blog/benefits-of-drinking-natural-mineral-water-everyday"
         },
 
         {
@@ -33,6 +35,7 @@ const Articles = () => {
             category: "Lifestyle",
             title: "Premium Water Bottles For Modern Sustainable Living",
             date: "14 Aug 2025",
+            url: "/blog/premium-water-bottles-for-modern-sustainable-living"
         },
 
     ];
@@ -179,7 +182,7 @@ const Articles = () => {
 
                                     <h3 className="article-title">
 
-                                        <a href="#">
+                                        <a href={item.url}>
 
                                             {item.title}
 
@@ -188,7 +191,7 @@ const Articles = () => {
                                     </h3>
 
                                     <a
-                                        href="#"
+                                        href={item.url}
                                         className="article-btn"
                                     >
 

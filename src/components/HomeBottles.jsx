@@ -97,7 +97,7 @@ function HomeBottles(){
                                         for travel, events, and daily refreshment.
                                     </p>
 
-                                    <a href="#" className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
+                                    <a href="/enquiry" className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
                                         data-aos="fade-up" 
                                         data-aos-delay="800"
                                     >
@@ -147,7 +147,7 @@ function HomeBottles(){
                                         families, fitness, and active lifestyles.
                                     </p>
 
-                                    <a href="#" className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
+                                    <a href="/enquiry" className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
                                         data-aos="fade-up" 
                                         data-aos-delay="800"
                                     >
@@ -201,7 +201,7 @@ function HomeBottles(){
                                     </p>
 
                                     <a
-                                        href="#"
+                                        href="/enquiry"
                                         className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
                                         data-aos="fade-up"
                                         data-aos-delay="800"
@@ -252,7 +252,7 @@ function HomeBottles(){
                                         premium hospitality experiences.
                                     </p>
 
-                                    <a href="#" className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
+                                    <a href="/enquiry" className="btn btn-primary btn-sm hmbtlsmpl-btn mt-4"
                                         data-aos="fade-up" 
                                         data-aos-delay="800"
                                         >

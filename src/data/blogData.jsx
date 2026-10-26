@@ -1,7 +1,102 @@
 const blogData = [
 
     {
-        id: 1,
+    id: 1,
+
+    slug: "why-daily-hydration-is-essential-for-healthy-living",
+    
+    keywords:
+      "daily hydration, healthy living, drinking water, hydration benefits, Bonafide water",
+    
+    image:
+      "/imgs/blog-post-img1.png?q=80&w=1400&auto=format&fit=crop",
+      
+    category: "Hydration",
+    date: "08 Aug 2026",
+    
+    author: "Admin",
+    
+    title: "Why Daily Hydration Is Essential for Healthy Living",
+    
+    description:
+      "Discover why regular hydration is important for everyday wellness, energy, and a healthy lifestyle.",
+    
+    content: `
+      Water plays an essential role in maintaining a healthy and balanced lifestyle. From supporting normal body functions to helping regulate body temperature, staying hydrated is an important part of everyday wellness. Drinking water regularly throughout the day helps replace fluids lost through normal activities.
+
+      Your hydration needs may vary depending on your activity level, climate, diet, and individual health requirements. Keeping water accessible at work, home, while travelling, or during exercise can help you develop a consistent hydration routine.
+
+      Choosing clean, refreshing drinking water makes hydration a more enjoyable part of your daily routine. Bonafide believes that good hydration should complement modern living, whether at home, in the workplace, or during special occasions.
+
+      Make hydration a daily habit by drinking water regularly and paying attention to your body's needs.
+    `,
+  },
+
+  {
+    id: 2,
+    slug: "benefits-of-drinking-natural-mineral-water-everyday",
+    keywords:
+      "natural mineral water, mineral water benefits, premium drinking water, hydration, Bonafide water",
+    image:
+      "/imgs/blog-post-img2.png?q=80&w=1400&auto=format&fit=crop",
+    category: "Mineral Water",
+    date: "11 Aug 2026",
+    author: "Admin",
+    title: "Benefits of Drinking Natural Mineral Water Every Day",
+    description:
+      "Explore natural mineral water, its mineral composition, and how to make informed choices about everyday hydration.",
+    content: `
+      Natural mineral water is appreciated for its refreshing taste and naturally occurring mineral composition.
+
+      Depending on its source, mineral water may contain minerals such as calcium, magnesium, and bicarbonates in varying amounts. The exact composition differs from one source to another, making it worthwhile to check product labels when choosing your preferred drinking water.
+
+      Drinking enough water throughout the day supports normal body functions and helps maintain fluid balance. Mineral water can be one option for meeting your daily fluid needs as part of a balanced lifestyle.
+
+      When selecting bottled water, consider its source, quality standards, packaging, storage conditions, and the information provided by the brand. Responsible handling and proper storage help maintain product quality.
+
+      At Bonafide, we believe that premium hydration combines refreshing water, thoughtful presentation, and attention to quality. Whether served at home, in restaurants, or in hospitality spaces, the right water choice can make everyday hydration feel more considered.
+    `,
+  },
+
+  {
+    id: 3,
+    
+    slug: "premium-water-bottles-for-modern-sustainable-living",
+    
+    keywords:
+      "premium water bottles, sustainable living, reusable glass bottles, eco-conscious packaging, Bonafide water",
+    
+      image:
+      "/imgs/blog-post-img3.png?q=80&w=1400&auto=format&fit=crop",
+    
+      category: "Sustainability",
+    
+      date: "14 Aug 2026",
+    
+      author: "Admin",
+    
+      title: "Premium Water Bottles for Modern Sustainable Living",
+    
+      description:
+      "Discover how thoughtful water bottle choices can combine premium presentation, convenience, and more responsible everyday habits.",
+    
+      content: `
+      Modern living increasingly brings together thoughtful design, convenience, and a growing interest in sustainability.
+
+      Water bottles are part of everyday life in homes, offices, restaurants, hotels, and event spaces. Choosing packaging that suits its intended use can help create a more considered hydration experience without compromising on presentation.
+
+      Glass bottles are valued for their clean appearance, transparency, and suitability for premium dining and hospitality settings. Where practical, reusable glass containers can be used repeatedly when they are designed for reuse and cleaned according to appropriate guidelines.
+
+      Sustainability also depends on how packaging is manufactured, transported, cleaned, reused, collected, and recycled. Choosing recyclable materials is one consideration, but local recycling facilities and correct disposal practices also matter.
+
+      Bonafide brings premium hydration into modern lifestyles, from elegant restaurant tables and hotel rooms to weddings, celebrations, and corporate gatherings. Thoughtful presentation helps make water service feel like a natural part of the overall guest experience.
+
+      By considering product quality, packaging suitability, reuse options, and responsible disposal, individuals and businesses can make more informed choices for everyday hydration.
+    `,
+  },
+
+    {
+        id: 31,
 
         slug: "luxury-hotel-water-experience",
 
@@ -38,7 +133,7 @@ const blogData = [
 
 
     {
-        id: 2,
+        id: 21,
 
         slug: "premium-water-fine-dining",
 
