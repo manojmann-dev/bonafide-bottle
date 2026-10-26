@@ -1,0 +1,13 @@
+* [33mc56445c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Update homepage middle blogs and enquiry links  section 3
+[31m|[m * [33m5824a9b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Refactor Navbar component for cleaner code
+[31m|[m[31m/[m  
+* [33m148f57d[m Update homepage middle section
+*   [33m349b95d[m Merge branch 'main' of https://github.com/manojmann-dev/bonafide-bottle
+[33m|[m[34m\[m  
+[33m|[m * [33mdfc89b7[m Fix salary ranges in jobsData.jsx
+* [34m|[m [33m4d4d3ce[m Add social sharing to blog articles
+[34m|[m[34m/[m  
+*   [33m04c487a[m Resolve README merge conflict
+[35m|[m[36m\[m  
+[35m|[m * [33me06131c[m Initial commit
+* [33m8cbeb7b[m Initial Bonafide website commit
